@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;  
+    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
     color: #383838;
     webkit-tap-highlight-color: #222;
     background-repeat-y: inherit;
@@ -265,11 +265,11 @@ header .header-content .inner p {
 
 #video-background {
   position: absolute;
-  right: 0; 
+  right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
+  width: auto;
   height: auto;
   z-index: 1;
 }
@@ -286,7 +286,7 @@ footer {
     .icon-lg {
         font-size: 80px;
     }
-    
+
     header {
         min-height: 100%;
     }
@@ -316,7 +316,7 @@ footer {
         max-width: 80%;
         font-size: 18px;
     }
-    
+
     section {
         min-height: 50px;
         padding: 100px 0;
@@ -672,14 +672,14 @@ h6 {
     font-weight: 900;
 }
 
-.roadmap-container-left {   
+.roadmap-container-left {
     height: 300px;
     display: inline-block;
     float: left;
     padding-left: 0px;
 }
 
-.roadmap-container-right {    
+.roadmap-container-right {
     height: 300px;
     display: inline-block;
     float: right;
@@ -866,31 +866,33 @@ h6 {
 
 .team-member-photo-1 {
     background: url(../img/team/photo_1.png);
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .team-member-photo-2 {
     background: url(../img/team/photo_2.png);
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .team-member-photo-3 {
-    background: url(../img/team/photo_3.png);   
+    background: url(../img/team/photo_3.png);
     background-repeat: no-repeat;
 }
 
 .team-member-photo-4 {
-    background: url(../img/team/photo_4.png);   
+    background: url(../img/team/photo_4.png);
     background-repeat: no-repeat;
 }
 
 .team-member-photo-5 {
-    background: url(../img/team/photo_5.png);   
+    background: url(../img/team/photo_5.png);
     background-repeat: no-repeat;
 }
 
 .team-member-photo-6 {
-    background: url(../img/team/photo_6.png);   
+    background: url(../img/team/photo_6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .team-member-info-name {
