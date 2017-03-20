@@ -37,28 +37,28 @@
 
 $(document).ready(function() {
     $("#tier_1_counter")
-      .countdown("2017/04/5 08:00:00", function(event) {
+      .countdown("2017/04/22 17:00:00", function(event) {
         $(this).text(
           event.strftime('%D days %H:%M:%S')
         );
       });
 
     $("#tier_2_counter")
-      .countdown("2017/04/12 08:00:00", function(event) {
+      .countdown("2017/04/29 17:00:00", function(event) {
         $(this).text(
           event.strftime('%D days %H:%M:%S')
         );
       });
 
     $("#tier_3_counter")
-      .countdown("2017/04/19 08:00:00", function(event) {
+      .countdown("2017/05/6 17:00:00", function(event) {
         $(this).text(
           event.strftime('%D days %H:%M:%S')
         );
       });
 
     $("#tier_4_counter")
-      .countdown("2017/05/26 08:00:00", function(event) {
+      .countdown("2017/05/13 17:00:00", function(event) {
         $(this).text(
           event.strftime('%D days %H:%M:%S')
         );
