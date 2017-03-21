@@ -243,11 +243,11 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2 class="text-green">Get Started</h2>
-                <a href="https://www.ethbits.com/register" target="ext" class="btn btn-default btn-lg wow flipInX">Registration</a>
+                <a href="https://www.ethbits.com/register" target="ext" class="reg-btn btn btn-default btn-lg wow flipInX">Registration</a>
             </div>
-            <br>
+<!--             <br>
             <hr/>
-            <br>
+            <br> -->
 <!--             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
@@ -283,29 +283,19 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="margin-top-0 wow fadeIn text-white">Get in Touch</h2>
                     <hr class="primary">
-                    <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <p>Enter your email below for giving updates and produc launches</p>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form class="contact-form row">
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Phone">
-                        </div>
-                        <div class="col-md-12">
-                            <label></label>
-                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                    <form class="contact-form row" onsubmit="event.preventDefault();"">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <label></label>
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
                         </div>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
-                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                            <button type="button" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
                         </div>
                     </form>
                 </div>
