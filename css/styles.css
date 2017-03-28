@@ -961,3 +961,7 @@ h6 {
         width: 49%!important;
     }
 }
+
+.sub-error, .sub-success {
+    display: none;
+}

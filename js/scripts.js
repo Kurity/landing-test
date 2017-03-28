@@ -65,22 +65,20 @@ $(document).ready(function() {
     });
 
   $("#submit_sub").on("click", function(){
+    $(".sub-error").hide();
     var email = $("#email_sub").val();
     if (validateEmail(email)) {
       $.get(
         "https://www.ethbits.com/subscribe",
         {
           email: email
-        },
-        onAjaxSuccess
+        }
       );
-       
-      function onAjaxSuccess(data)
-      {
-        console.log(data);
-      };
+      
+      $(".sub-success").show();
+      $("#email_sub, #submit_sub").hide();
     } else {
-      console.log("error");
+      $(".email-type").show();
     }
     return false;
   });
