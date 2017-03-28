@@ -541,7 +541,8 @@ img::-moz-selection {
 }
 
 #five {
-    background: rgba(132, 203, 207, 0.9)
+    background: rgba(132, 203, 207, 0.9);
+    overflow-x: hidden;
 }
 
 #roadmap img {
@@ -584,7 +585,7 @@ h6 {
 .ghost-ico {
     background-repeat-y: inherit;
     background-repeat: no-repeat;
-    background-image: url(../img/ghost.png);
+    background-image: url(../img/ghost.svg);
     background-size: 100%;
     background-position: center;
     width: 40px;
@@ -656,7 +657,7 @@ h6 {
 }
 
 .tiers-ghost-icon {
-    background: url(../img/ghost.png);
+    background: url(../img/ghost.svg);
     height: 50px;
     width: 50px;
     background-size: 50px;
@@ -931,3 +932,27 @@ h6 {
 .reg-btn {
     font-size: 22px;
 }
+
+@media (max-width: 570px) {
+    .countdown-timer-tier-name, .countdown-timer-value {
+        font-size: 15px;
+    }
+
+    .tiers-ghost-icon {
+        margin-top: 15px;
+        height: 40px;
+        width: 40px;
+        background-size: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .countdown-timer-tier-name, .countdown-timer-value {
+        font-size: 12px;
+    }
+
+    .tiers-ghost-icon {
+        display: none;
+    }
+}
+
