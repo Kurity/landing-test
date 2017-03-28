@@ -956,3 +956,8 @@ h6 {
     }
 }
 
+@media (min-width: 1200px) {
+    #four .col-lg-6 {
+        width: 49%!important;
+    }
+}

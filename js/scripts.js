@@ -36,31 +36,57 @@
 })(jQuery);
 
 $(document).ready(function() {
-    $("#tier_1_counter")
-      .countdown("2017/04/15 17:00:00", function(event) {
-        $(this).text(
-          event.strftime('%D days %H:%M:%S')
-        );
-      });
+  $("#tier_1_counter")
+    .countdown("2017/04/15 17:00:00", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
 
-    $("#tier_2_counter")
-      .countdown("2017/04/22 17:00:00", function(event) {
-        $(this).text(
-          event.strftime('%D days %H:%M:%S')
-        );
-      });
+  $("#tier_2_counter")
+    .countdown("2017/04/22 17:00:00", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
 
-    $("#tier_3_counter")
-      .countdown("2017/04/29 17:00:00", function(event) {
-        $(this).text(
-          event.strftime('%D days %H:%M:%S')
-        );
-      });
+  $("#tier_3_counter")
+    .countdown("2017/04/29 17:00:00", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
 
-    $("#tier_4_counter")
-      .countdown("2017/05/6 17:00:00", function(event) {
-        $(this).text(
-          event.strftime('%D days %H:%M:%S')
-        );
-      });
+  $("#tier_4_counter")
+    .countdown("2017/05/6 17:00:00", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
+
+  $("#submit_sub").on("click", function(){
+    var email = $("#email_sub").val();
+    if (validateEmail(email)) {
+      $.get(
+        "https://www.ethbits.com/subscribe",
+        {
+          email: email
+        },
+        onAjaxSuccess
+      );
+       
+      function onAjaxSuccess(data)
+      {
+        console.log(data);
+      };
+    } else {
+      console.log("error");
+    }
+    return false;
+  });
+
+  function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
 });
