@@ -965,3 +965,7 @@ h6 {
 .sub-error, .sub-success {
     display: none;
 }
+
+footer h4 {
+    color: #ffffff !important;
+}
