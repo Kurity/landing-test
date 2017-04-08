@@ -966,6 +966,14 @@ h6 {
     display: none;
 }
 
+.as_seen_in .call-to-action{
+    margin-bottom: 50px;
+}
+
+.as_seen_in img {
+    max-width: 100%;
+}
+
 footer h4 {
     color: #ffffff !important;
 }
