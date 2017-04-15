@@ -413,5 +413,25 @@
     </script>
     <!--End of Tawk.to Script-->
 
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <p>We have not permitted USA citizens to participate in Ethbits Crowdsale so if you read this you have a USA IP Address.</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">      
+        $.ajax({
+            url: 'http://ip-api.com/json',
+            method: 'GET',
+            dataType: 'json'
+        })
+        .success(function(data) {
+            if (data.countryCode == 'US') {
+                $('.overlay').show();
+                $('body').css('overflow-y', 'hidden');
+            }
+        });
+    </script>
+
   </body>
 </html>
