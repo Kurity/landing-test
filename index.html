@@ -419,14 +419,14 @@
       </div>
     </div>
 
-    <script type="text/javascript">      
+    <script type="text/javascript">
         $.ajax({
-            url: 'http://ip-api.com/json',
+            url: 'https://ipapi.co/json',
             method: 'GET',
             dataType: 'json'
         })
         .success(function(data) {
-            if (data.countryCode == 'US') {
+            if (data.country == 'US') {
                 $('.overlay').show();
                 $('body').css('overflow-y', 'hidden');
             }
